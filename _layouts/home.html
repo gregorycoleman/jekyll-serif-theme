@@ -34,6 +34,12 @@ Bare Miniumu
 
       <div class="row justify-content-start">
         <div class="col-12 col-md-4 mb-1">
+
+
+        <div class="card">
+          <div class="card-body">
+
+
           <div class="service service-summary">
             <div class="service-content">
               <h2 class="service-title">
@@ -45,6 +51,12 @@ Bare Miniumu
 
             </div>
           </div>
+
+
+          </div>
+        </div>
+
+          
         </div>
       </div>
     </div>
@@ -63,19 +75,19 @@ Bare Miniumu
 
         <div class="card">
           <div class="card-body">
-    
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-            <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-            <p>{{ post.summary | markdownify | strip_html | truncate: 100 }} </p>
-            <div class="col-auto">
-            <a class="button button-primary" href="{{ post.url | prepend: site.baseurl }}">Listen</a>
+
+            <div class="service service-summary">
+              <div class="service-content">
+                <h2 class="service-title">
+                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+                <p>{{ post.summary | markdownify | strip_html | truncate: 100 }} </p>
+                <div class="col-auto">
+                <a class="button button-primary" href="{{ post.url | prepend: site.baseurl }}">Listen</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
           </div>
         </div>
