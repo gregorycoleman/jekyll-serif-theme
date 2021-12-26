@@ -10,6 +10,7 @@ bodyClass: "page-home"
         {{ content }}
         {% if page.show_call_box %}
           {% include call.html show_button=true %}
+Bare Miniumu
         {% endif %}
       </div>
       {% if page.intro_image %}
@@ -21,29 +22,93 @@ bodyClass: "page-home"
   </div>
 </div>
 
+
+
+
+
+{% assign first_post = site.posts.first %}
 <div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {% for service in site.services %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+
+    <div class="container pt-6 pb-6 pb-md-10">
+      <h1 class="label reversed">Latest Episode</h1>
+
+      <div class="row justify-content-start">
+        <div class="col-12 col-md-4 mb-1">
+
+
+        <div class="card">
+          <div class="card-body">
+
+
+          <div class="service service-summary">
+            <div class="service-content">
+              <h2 class="service-title">
+                <a href="{{ first_post.url | prepend: site.baseurl }}">{{ first_post.title }}</a>
+              </h2>
+              <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
+              <p>{{ first_post.summary | markdownify | strip_html | truncate: 100 }} </p>
+              <a class="button button-primary" href="{{ first_post.url | prepend: site.baseurl }}">Listen</a>
+
+            </div>
+          </div>
+
+
           </div>
         </div>
+
+          
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+<div class="strip strip-gray">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      {% for post in site.posts offset:1 %}
+      <div class="col-12 col-md-4 mb-1">
+
+
+
+        <div class="card">
+          <div class="card-body">
+
+            <div class="service service-summary">
+              <div class="service-content">
+                <h2 class="service-title">
+                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+                <p>{{ post.description | markdownify | strip_html | truncate: 100 }} </p>
+                <div class="col-auto">
+                <a class="button button-primary" href="{{ post.url | prepend: site.baseurl }}">Listen</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
       </div>
       {% endfor %}
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+        <a class="button button-primary" href="{{ "posts" | relative_url }}">All Posts</a>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
 
 {% if site.data.features %}
 <div class="strip strip-grey">
