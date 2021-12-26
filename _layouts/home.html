@@ -82,7 +82,7 @@ Bare Miniumu
                   <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
                 <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-                <p>{{ post.summary | markdownify | strip_html | truncate: 100 }} </p>
+                <p>{{ post.description | markdownify | strip_html | truncate: 100 }} </p>
                 <div class="col-auto">
                 <a class="button button-primary" href="{{ post.url | prepend: site.baseurl }}">Listen</a>
                 </div>
