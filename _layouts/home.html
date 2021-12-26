@@ -44,23 +44,67 @@ bodyClass: "page-home"
     
     {% for post in site.posts offset:1 %}
         <div class="cards">
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <p>{{ post.summary }} </p>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <p>{{ post.summary }} </p>
         </div>
     {% endfor %}
     
 </div>
 
+AAAAAAAAAA
+
+{% assign first_post = site.posts.first %}
+<div class="strip strip-primary">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              <a href="{{ service.url | relative_url }}">{{ first_post.title }}</a>
+            </h2>
+            <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
+            <p>{{ first_post.summary | markdownify | strip_html | truncate: 100 }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+CCCCCCCCCC
+
+<div class="strip strip-secondary">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      {% for post in site.posts offset:1 %}
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              <a href="{{ service.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+            <p>{{ post.summary | markdownify | strip_html | truncate: 100 }} </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a class="button button-primary" href="{{ "posts" | relative_url }}">All Posts</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-
-
-
+BBBBBBBBBBBBBBBBBBBBB
 
 
 
