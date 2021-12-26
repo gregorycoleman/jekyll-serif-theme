@@ -35,7 +35,7 @@ bodyClass: "page-home"
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ first_post.title }}</a>
+              <a href="{{ first_post.url | prepend: site.baseurl }}">{{ first_post.title }}</a>
             </h2>
             <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
             <p>{{ first_post.summary | markdownify | strip_html | truncate: 100 }} </p>
@@ -57,10 +57,13 @@ bodyClass: "page-home"
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ post.title }}</a>
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
             <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
             <p>{{ post.summary | markdownify | strip_html | truncate: 100 }} </p>
+            <div class="col-auto">
+            <a class="button button-primary" href="{{ post.url | prepend: site.baseurl }}">Listen</a>
+            </div>
           </div>
         </div>
       </div>
