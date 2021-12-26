@@ -51,6 +51,19 @@ Bare Miniumu
 </div>
 
 
+<div class="card">
+  <div class="card-header">
+    {{ first_post.title }}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ first_post.date | date: "%b %-d, %Y" }}</h5>
+    <p class="card-text">{{ first_post.summary | markdownify | strip_html | truncate: 100 }}</p>
+    <a href="{{ first_post.url | prepend: site.baseurl }}" class="btn btn-primary">Listen</a>
+  </div>
+</div>
+
+
+
 <div class="strip strip-gray">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
