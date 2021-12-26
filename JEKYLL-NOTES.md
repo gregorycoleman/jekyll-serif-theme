@@ -14,3 +14,6 @@ https://lukaszadam.com/illustrations
 https://lukaszadam.com/illustrations
 https://drawkit.com
 
+why build a website
+https://resonaterecordings.com/marketing-a-podcast/podcast-website/
+
