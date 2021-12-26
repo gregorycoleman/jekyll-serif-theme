@@ -40,6 +40,8 @@ bodyClass: "page-home"
               </h2>
               <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
               <p>{{ first_post.summary | markdownify | strip_html | truncate: 100 }} </p>
+              <a class="button button-primary" href="{{ first_post.url | prepend: site.baseurl }}">Listen</a>
+
             </div>
           </div>
         </div>
