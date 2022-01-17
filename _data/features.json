@@ -1,6 +1,6 @@
 [
   {
-    "title": "Blah, Blah , Blah  ",
+    "title": "Services",
     "description": "New clients receive an obligation free consultation.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
@@ -9,7 +9,7 @@
     }
   },
   {
-    "title": "RIP Biz Markie",
+    "title": "Hosts",
     "description": "All members of our team are certified accountants.",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
@@ -18,8 +18,8 @@
     }
   },
   {
-    "title": "How is Mick Jagger still alive ?",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Services",
+    "description": "We stay up to date on the latest changes in the podcasting world.",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,
