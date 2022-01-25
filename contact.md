@@ -12,4 +12,4 @@ Email us at business @ podcastbreakdown.info
 
 |        | URL   |
 | --------- | --------------- |
-| NinjaBuzz    | [](https://ninjabuzz.io/podcast-breakdown)  |
+| NinjaBuzz    | [https://ninjabuzz.io/podcast-breakdown](https://ninjabuzz.io/podcast-breakdown)  |
