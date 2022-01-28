@@ -8,35 +8,35 @@ bodyClass: "page-basic"
         <div class="col-12 col-md-8">
             <div class="service service-single">
                 <h1 class="title">{{post.title}}</h1>
+{{ post.file }}
 
+                    <article class="post" >
 
-<article class="post" >
+                        <h1 class="u-full-width" >{{ post.title }}</h1>
+                           
+                        <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> | A discussion with {{ post.voices }}</p>
+                        
+                        <div class="container center-content">
+                            <div class="seven columns">
+                                <audio controls>
+                                    <source src="{{ post.file }}" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <div class="four columns center-content">
+                                <a href="{{ site.baseurl }}{{ post.file }}" class="button u-full-height" download="{{ post.title }}">Download Now</a>
+                            </div>
+                        </div>
 
-    <h1 class="u-full-width" >{{ post.title }}</h1>
-       
-    <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> | A discussion with {{ post.voices }}</p>
-    
-    <div class="container center-content">
-        <div class="seven columns">
-            <audio controls>
-                <source src="{{ post.file }}" type="audio/mp3">
-            </audio>
-        </div>
-        <div class="four columns center-content">
-            <a href="{{ site.baseurl }}{{ post.file }}" class="button u-full-height" download="{{ post.title }}">Download Now</a>
-        </div>
-    </div>
+                        <div>
+                            {{ content }}
+                            
+                            <p><em>Keywords - {{ post.keywords }}</em></p>
+                        </div>    
+                    </article>
 
-    <div>
-        {{ content }}
-        
-        <p><em>Keywords - {{ post.keywords }}</em></p>
-    </div>    
-</article>
-
-<!-- <script src="{{ site.baseurl }}/js/plyr.js"></script> -->
-<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
-<script>plyr.setup();</script>
+                    <!-- <script src="{{ site.baseurl }}/js/plyr.js"></script> -->
+                    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+                    <script>plyr.setup();</script>
 
 
 
