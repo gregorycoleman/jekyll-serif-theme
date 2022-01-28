@@ -6,7 +6,8 @@ upcoming_intro_image: "images/illustrations/undraw_podcast_re_wr88.svg"
 intro_image: "images/Podcast_Breakdown.png"
 intro_image_unused: "images/illustrations/pointing.svg"
 intro_image_absolute: false
-intro_image_hide_on_mobile: true
+intro_image_hide_on_mobile: false
+advertise_image: "images/ninjabuzz.io.png"
 show_call_box: true
 ---
 
