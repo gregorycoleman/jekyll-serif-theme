@@ -8,4 +8,7 @@ promoted: true
 weight: 2
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.
+Gregory Coleman covers the technical side of running a podcast. Gregory has a long background in information technology, working in different aspects. From building websites to managing cybersecurity for hundreds of servers, Gregory has broad experience in information technology.
+
+Gregory has post graduate study in Information Systems.
+

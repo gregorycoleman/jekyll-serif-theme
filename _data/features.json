@@ -1,7 +1,7 @@
 [
   {
-    "title": "Services",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "Monetization",
+    "description": "We look at ways to turn your podcast into money.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "title": "Hosts",
-    "description": "All members of our team are certified accountants.",
+    "title": "Hosting",
+    "description": "We look at basic and advanced questions on hosting.",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
@@ -18,8 +18,8 @@
     }
   },
   {
-    "title": "Services",
-    "description": "We stay up to date on the latest changes in the podcasting world.",
+    "title": "Hanging Out",
+    "description": "If you have an interesting take on podcasting or service. Let us know, we will try to have you on the show.",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,
