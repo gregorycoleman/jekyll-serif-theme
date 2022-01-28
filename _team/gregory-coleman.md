@@ -10,5 +10,5 @@ weight: 2
 
 Gregory Coleman covers the technical side of running a podcast. Gregory has a long background in information technology, working in different aspects. From building websites to managing cybersecurity for hundreds of servers, Gregory has broad experience in information technology.
 
-Gregory has post graduate study in Information Systems.
+Gregory has done post graduate study in Information Systems.
 
