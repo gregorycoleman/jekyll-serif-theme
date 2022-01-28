@@ -8,7 +8,7 @@ promoted: true
 weight: 1
 ---
 
-DonOvan covers the Personality and Broadcast side of running a podcast and over 3 decades of experience has a long background in broadcasting technology, and production working in all aspects communications has broad experience in ON-AIR RADIO TV TALENT. PODCAST PRODUCER CO-HOST
+DonOvan covers the Personality and Broadcast side of running a podcast and has over 3 decades of experience has a long background in broadcasting technology, and production working in all aspects of communications. DonOvan has  broad experience in **ON-AIR RADIO TV TALENT. PODCAST PRODUCER CO-HOST**
 
 Host of The Podcast Breakdown-On-Air Talent, Morning Show creator of The (The Original ) Breakfast Club, Voice Artist, Actor, Private Caterer, Entertainment Comedy, Special Events, Lead Singer, Performer, Creator of Seasoning blend and BBQ Rub and Sauce, and 2021 Favorite Chef National Contestant. 
 
