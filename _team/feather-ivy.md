@@ -5,6 +5,7 @@ draft: false
 image: "images/team/feather-ivy.png"
 jobtitle: "Art Director"
 linkedinurl: ""
+promoted: true
 weight: 3
 ---
 
