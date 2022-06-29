@@ -12,11 +12,10 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    <itunes:category text="Technology">
-            <itunes:category text="Information Technology"/>
-    </itunes:category>
+
     {% for post in site.posts limit:10 %}
       <item>
+        
         <title>{{ post.title | xml_escape }}</title>
         <enclosure url="{{ post.file | xml_escape }}" length="{{ post.length | xml_escape }}" type="audio/mpeg" />
         <description>{{ post.content | xml_escape }}</description>
