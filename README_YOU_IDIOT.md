@@ -23,3 +23,17 @@ https://help.apple.com/itc/podcasts_connect/#/itcbaf351599
 
 - [Hugo Serif Theme](https://github.com/zerostaticthemes/hugo-serif-theme) (official)
 - [Gatsby Serif Theme](https://github.com/zerostaticthemes/gatsby-serif-theme) (official)
+
+
+## The podcast feed is someplace else
+
+https://github.com/gregorycoleman/the-unnamed-podcast/blob/master/podcast.xml
+
+
+### Apple Podcst Categories
+https://podcasters.apple.com/support/1691-apple-podcasts-categories
+https://podcasters.apple.com/support/823-podcast-requirements
+
+
+## Archive audio
+https://archive.org/help/audio.php?identifier=gmt-20220201-195344-recording-final
