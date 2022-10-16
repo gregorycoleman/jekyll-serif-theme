@@ -1,12 +1,17 @@
 ---
-title: Jekyll Serif Theme
+title: Podcast Breakdown
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
-intro_image: "images/illustrations/pointing.svg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
+description: Building Your Podcast
+upcoming_intro_image: "images/illustrations/undraw_podcast_re_wr88.svg"
+intro_image: "images/Podcast_Breakdown.png"
+intro_image_unused: "images/illustrations/pointing.svg"
+intro_image_absolute: false
+intro_image_hide_on_mobile: false
+#advertise_image: "images/ninjabuzz.io.png"
+show_call_box: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# Podcast Breakdown
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+We breakdown what you need to know to build a podcast.
+

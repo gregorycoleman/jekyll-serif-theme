@@ -1,7 +1,6 @@
 ---
-title: Jekyll Serif - Jekyll Small Business Theme
 layout: default
-bodyClass: page-home
+bodyClass: "page-home"
 ---
 
 <div class="intro">
@@ -9,42 +8,135 @@ bodyClass: page-home
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ content }}
-        {% if site.homepage.show_call_box %}
+        {% if page.show_call_box %}
           {% include call.html show_button=true %}
+
+              <p>
+              <a target="_blank" href="https://podcasts.apple.com/us/podcast/podcast-breakdown/id1591027552" style="display: inline-block; background-color: #FFFFFF; background-image: url(https://www.buzzsprout.com/images/badges/listen-on-embed.svg); background-repeat: no-repeat; border: 1px solid #000000; border-radius: 5px; margin: 0 5px 5px 0; text-indent: -9000px; background-position: -230px 7px; height: 40px; width: 165px;">Listen on Apple Podcasts</a>
+              </p>
+
+              <p>
+              <a target="_blank" href="https://podcasts.google.com/feed/aHR0cHM6Ly9ncmVnb3J5Y29sZW1hbi5naXRodWIuaW8vdGhlLXVubmFtZWQtcG9kY2FzdC9wb2RjYXN0LnhtbA?sa=X&ved=2ahUKEwj4pdfn2Yb0AhUzNqYKHUovDPgQ9sEGegQIARAC%20target=" style="display: inline-block; background-color: #FFFFFF; background-image: url(https://www.buzzsprout.com/images/badges/listen-on-embed.svg); background-repeat: no-repeat; border: 1px solid #000000; border-radius: 5px; margin: 0 5px 5px 0; text-indent: -9000px; background-position: -230px -113px; height: 40px; width: 165px;">Listen on Google Podcasts</a>
+              </p>
+
+              <p>
+              <a target="_blank" href="https://open.spotify.com/show/1yw5wbr2ws9IFeBsbS4RLQ" style="display: inline-block; background-color: #FFFFFF; background-image: url(https://www.buzzsprout.com/images/badges/listen-on-embed.svg); background-repeat: no-repeat; border: 1px solid #000000; border-radius: 5px; margin: 0 5px 5px 0; text-indent: -9000px; background-position: -230px -53px; height: 40px; width: 106px;">Listen on Spotify</a>
+              </p>
+
+              <p>
+              <a target="_blank" href="https://music.amazon.com/podcasts/286f0ec1-c226-4ae6-8d52-40e1a51a426b/podcast-breakdown" style="display: inline-block; background-color: #FFFFFF; background-image: url(https://www.buzzsprout.com/images/badges/listen-on-embed.svg); background-repeat: no-repeat; border: 1px solid #000000; border-radius: 5px; margin: 0 5px 5px 0; text-indent: -9000px; background-position: -230px -293px; height: 40px; width: 162px;">Listen on Amazon Music</a>
+              </p>
         {% endif %}
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+        <img width="100%" alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
       </div>
       {% endif %}
     </div>
   </div>
 </div>
 
+
+
+
+
+{% assign first_post = site.posts.first %}
 <div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {% for service in site.services %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+
+    <div class="container pt-6 pb-6 pb-md-10">
+      <h1 class="label reversed">Latest Episode</h1>
+
+      <div class="row justify-content-start">
+        <div class="col-12 col-md-8 mb-1">
+
+          <div class="card">
+            <div class="card-body">
+
+              <div class="service service-summary">
+                <div class="service-content">
+                  <h2 class="service-title">
+                    <a href="{{ first_post.url | prepend: site.baseurl }}">{{ first_post.title }}</a>
+                  </h2>
+                  <p class="meta">{{ first_post.date | date: "%b %-d, %Y" }}</p>
+                  <p>{{ first_post.summary | markdownify | strip_html | truncate: 100 }} </p>
+                  <a class="button button-primary" href="{{ first_post.url | prepend: site.baseurl }}">Listen</a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+
+
+        <div class="col-md-4 mb-1">
+          <div class="card">
+            <div class="card-body">
+
+              <h3>Advertise With Us</h3>
+	      <!--
+              <a href="https://ninjabuzz.io/podcast-breakdown"> <img alt="NinjaBuzz" height="70" src="{{ page.advertise_image }}"></a>
+	      -->
+
+            </div>
           </div>
         </div>
+
+
+
+      </div>
+    </div>
+</div>
+
+
+
+
+<div class="strip strip-gray">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      {% for post in site.posts offset:1 %}
+      <div class="col-12 col-md-4 mb-1">
+
+
+
+        <div class="card">
+          <div class="card-body">
+
+            <div class="service service-summary">
+              <div class="service-content">
+                <h2 class="service-title">
+                  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+                <p>{{ post.description | markdownify | strip_html | truncate: 100 }} </p>
+                <div class="col-auto">
+                <a class="button button-primary" href="{{ post.url | prepend: site.baseurl }}">Listen</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
       </div>
       {% endfor %}
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+        <a class="button button-primary" href="{{ "posts" | relative_url }}">All Posts</a>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
 
 {% if site.data.features %}
 <div class="strip strip-grey">
@@ -55,7 +147,7 @@ bodyClass: page-home
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
           {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image | relative_url }}" /></div>
+          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
           {% endif %}
           <h2 class="feature-title">{{ feature.title }}</h2>
           <div class="feature-content">{{ feature.description }}</div>

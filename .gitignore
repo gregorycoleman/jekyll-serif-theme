@@ -1,3 +1,6 @@
+vendor/bundle
+*.swp
+*.swift
 # NPM
 node_modules
 npm-debug.log

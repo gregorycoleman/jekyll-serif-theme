@@ -1,3 +1,11 @@
+# To deploy
+
+```
+ bundle exec jekyll build
+```
+
+
+
 # Jekyll Serif Theme
 
 Serif is a modern business theme for Jekyll. It contains multiple content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
@@ -7,16 +15,18 @@ Serif is a modern business theme for Jekyll. It contains multiple content types 
 
 ![Jekyll Serif Theme screenshot](https://www.zerostatic.io/theme/jekyll-serif/jekyll-serif-screenshot.png)
 
-## Theme features
+### Theme features
 
-- Jekyll 4.1
+- Jekyll 4.2
+- Netlify & Github Pages ready
 - Services (Collection)
 - Team (Collection)
 - Features (Data)
 - SCSS
 - Responsive design
-- Bootstrap 4.3 grid and media queries only
-- Responsive menu
+- Responsive hamburger and slide in menu
+- Bootstrap 4.6
+- Only the bootstrap grid and utilites are imported by default. If you want to use more of the Boostrap library you can uncomment the `@import` in `style.scss`
 - 100/100 Google Lighthouse speed score
 - 100/100 Google Lighthouse seo score
 - 100/100 Google Lighthouse accessibility score
@@ -25,9 +35,9 @@ Serif is a modern business theme for Jekyll. It contains multiple content types 
 - Under 20KB without Google fonts ⚡⚡⚡
 - Robust example content included
 - Royalty free illustrations included
-- Netlify & Github Pages ready
 
-# Installation
+
+## Installation
 
 ### Installing Ruby & Jekyll
  
@@ -55,27 +65,40 @@ To build the theme.
 bundle exec jekyll build
 ```
 
-# Deployment
+## Deployment
 
-## Netlify
+### Stackbit
 
-This theme contains a `netlify.toml` and has been tested to work with Netlify.
+Use Stackbit to deploy this theme. This theme contains a valid and tested `stackbit.yaml`
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/zerostaticthemes/jekyll-serif-theme)
+
+### Netlify
+
+Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-serif-theme)
 
-## Github Pages
-This theme has been tested to work with Github Pages (and Github Project Pages)
-
-If you are using this theme with Github Pages and you are using a Github Project Page then  you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
+### Github Pages
+This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
 
 For example the site https://zerostaticthemes.github.io/jekyll-serif-theme would have `baseurl: "/jekyll-serif-theme/"`
 
+## License & Credits
 
-## Credits
+### Credits
 
 - Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
+- Stock images by Unsplash - https://unsplash.com/
+- Feature icons by Noun Project - https://thenounproject.com/
 
+### License
 
-## License
+This theme is open source under the MIT license. Please be respectful 🙏🏽 Leave me as an original author in the LICENSE file if you fork or copy this theme. 
 
-This theme is open source under the MIT license. If you fork or copy this theme you must leave me as the original author in the LICENSE file (on line 3 where I am listed as the author). Really, I just don't want people copying this theme and then saying it's their theme, because I put a lot of work into my themes, thanks!
+> Do not create ports of this theme. Do You can't re-distribute or re-sell this theme as a theme, stock, in a tool or as a template.
+
+### Other Versions
+
+- [Hugo Serif Theme](https://github.com/zerostaticthemes/hugo-serif-theme) (official)
+- [Gatsby Serif Theme](https://github.com/zerostaticthemes/gatsby-serif-theme) (official)
